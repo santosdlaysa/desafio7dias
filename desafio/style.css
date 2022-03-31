@@ -12,11 +12,15 @@ nav {
     display: flex;
     justify-content: flex-start;
     align-items: center; 
-    border: 1px solid #000000;
-    box-sizing: border-box;
-    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    padding: 0px, 32px, 0px, 15px;
     margin: 1.6em;
 }
+
+body {
+    width: 100%;
+    height: 100vh;
+}
+
 
 .container {
     
@@ -84,7 +88,7 @@ header {
     box-sizing: border-box;
     width: 1440px;
     height: 407px;
-    align-items: center;
+
 }
 
 .page {
@@ -110,7 +114,8 @@ h1 {
 }
 
 .conteudo   {
-    font-family: 'Inter', sans-serif;
+    font-family: 'Inter';
+    font-style: normal;
     font-size: 20px;
     line-height: 30px;
     color: #667085;
