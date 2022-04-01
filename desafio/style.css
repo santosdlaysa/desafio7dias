@@ -4,20 +4,12 @@
 :root {
     --text-color: #667085;
   }
+
 * {
 box-sizing: border-box;
 margin: 0;
 padding: 0;
-background-color: white;
 font-family: 'Inter', sans-serif;
-}
-
-nav {
-    display: flex;
-    justify-content: flex-start;
-    align-items: center; 
-    padding: 0px, 32px, 0px, 15px;
-    margin: 1.6em;
 }
 
 body {
@@ -26,52 +18,17 @@ body {
 }
 
 
-.container {
-    
-      font-weight: 500;
-      font-size: 16px;
-      color: black;
-      margin: 0.5%;
-      display: flex; 
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center; 
+    padding: 1rem 0;
 }
 
-a {
-    
-      font-weight: 500;
-      font-size: 16px;
-      color: #667085;
-      text-decoration: none;
-}
-.logo {
-    top: 8.5px;
-    margin-left: 13px;
-    height: 26px;
-    width: 27px;
-}
-.flex-items li {
-    display: inline-block;
-    padding: 10px 20px;
-    font-family: Inter, sans-serif;
-    font-weight: 500;
-    font-size: 16px;
-    color: black;
-    margin-left: 100px;
-    margin-right: -100px;
-}
-
-.flex-items li a {
-    transition: all 0.3s ease 0s;
-    
-}
-
-.login {
-    margin-left: 570px;
-    margin-right: 20px;
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 24px;
+.links a {
+    color: var(--text-color);
+    text-decoration: none;
+    margin-right: 2rem;
 }
 
 button {
@@ -81,17 +38,21 @@ button {
     height: 50px;
     top: 0px;
     border-radius: 0.5rem;
-    background-color: #8E2424;
-    color: white;
-    font-size: 16px;
-    box-shadow: 0px 2px 2px rgb(85, 83, 83);
+    color: var(--text-color);
+    background: none;
+    font-size: 0.9rem;
+}
 
+button#signUp {
+    background-color: #8E2424;
+    color: #fff;
 }
 
 header {
     box-sizing: border-box;
     width: 1440px;
     height: 407px;
+    margin-bottom: 96px;
 
 }
 
@@ -126,4 +87,17 @@ h1 {
     text-align: center;
     word-break: break-word;
     margin-top: 36px;
+}
+
+.metricas-container {
+    display: flex;
+    padding: 0 32px;
+    margin: 96px;
+    justify-content: center;
+    
+}
+.metricas-container h1 {
+    font-size: 60px;
+    margin: 0 32px;
+
 }
