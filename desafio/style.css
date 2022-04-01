@@ -92,12 +92,31 @@ h1 {
 .metricas-container {
     display: flex;
     padding: 0 32px;
-    margin: 96px;
+    margin: 5%;
     justify-content: center;
+    flex-direction:row;
     
 }
 .metricas-container h1 {
-    font-size: 60px;
-    margin: 0 32px;
+    font-size: 70px;
+    margin: 0 60px 31px 0;
+    width: 256px;
+    height: 96px;
+    color: #8E2424;
+}
 
+.metricas-container span {
+    color: #101828;
+    font-size: 18px;
+    margin-top: 12px;
+    margin: 0 29px;
+    width: 280px;
+    height: 28px;
+    font-style: normal;
+    font-weight: 400px;
+    line-height: 28px;
+    padding: 0 10px;
+    justify-content: space-between;
+    font-style: normal;
+    
 }
