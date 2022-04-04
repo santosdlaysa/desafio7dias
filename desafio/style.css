@@ -53,7 +53,7 @@ header {
     width: 1440px;
     height: 407px;
     margin-bottom: 96px;
-
+    
 }
 
 .page {
@@ -87,4 +87,36 @@ h1 {
     text-align: center;
     word-break: break-word;
     margin-top: 36px;
+}
+
+.metricas-container {
+    height: 192px;
+    width: 1280px;
+    left: 80px;
+    top: 0px;
+    border-radius: 0px;
+    padding: 0px, 32px, 0px, 32px;
+    display: flex;
+    justify-content: space-between;
+    margin-left: 90px;
+    margin-top: 96px;
+}
+
+.metricas-container h2 {
+    margin-top: 12px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 60px;
+    line-height: 72px;
+    color: #8E2424;
+}
+
+.metricas-container p {
+    height: 72px;
+    width: 280px;
+    left: 0px;
+    top: 36px;
+    border-radius: nullpx;
+
 }
