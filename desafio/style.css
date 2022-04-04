@@ -94,12 +94,12 @@ h1 {
     width: 1280px;
     left: 80px;
     top: 0px;
-    border-radius: 0px;
     padding: 0px, 32px, 0px, 32px;
     display: flex;
     justify-content: space-between;
     margin-left: 90px;
     margin-top: 96px;
+    display: flex;
 }
 
 .metricas-container h2 {
@@ -119,4 +119,16 @@ h1 {
     top: 36px;
     border-radius: nullpx;
 
+}
+
+.vagas {
+    text-align: center;
+    margin-top: 96px;
+}
+
+.vagas span {
+    background: red;
+    border-radius: 16px;
+    
+    
 }
