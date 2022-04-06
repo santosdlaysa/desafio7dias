@@ -17,6 +17,7 @@ body {
     height: 100vh;
 }
 
+/* navbar */
 
 nav {
     display: flex;
@@ -47,6 +48,8 @@ button#signUp {
     background-color: #8E2424;
     color: #fff;
 }
+
+/* text1 */
 
 header {
     box-sizing: border-box;
@@ -89,6 +92,8 @@ h1 {
     margin-top: 36px;
 }
 
+/* metricas */
+
 .metricas-container {
     height: 192px;
     width: 1280px;
@@ -121,14 +126,56 @@ h1 {
 
 }
 
+/* text 2 */
+
 .vagas {
     text-align: center;
     margin-top: 96px;
 }
 
 .vagas span {
-    background: red;
-    border-radius: 16px;
-    
+    display: flex;
+    align-items: center;
+    color: #8E2424;
+    background: rgba(142, 36, 36, 0.05);
+    padding: 0.3rem 0.5rem;
+    border-radius: 0.5rem;
+    width: 125px;
+    height: 28px;
+    margin-left: 650px;
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
     
 }
+
+.vagas h2 {
+    text-align: center;
+    color: var(--title-color);
+    margin-bottom: 20px;
+  font-family: Inter;
+    font-size: 36px;
+    font-weight: 600;
+    line-height: 44px;
+    letter-spacing: -0.02em;
+    text-align: center;
+
+  }
+  
+  .vagas p {
+    text-align: center;
+    color: #667085;
+    font-family: Inter;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 30px;
+    letter-spacing: 0em;
+    text-align: center;
+
+  }
+
+  /* imagem principal */
+  
+  .vagas img {
+    margin-top: 2rem;
+    
+  }
