@@ -1,15 +1,11 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap');
 
-:root {
-    --text-color: #667085;
-  }
-
 * {
-box-sizing: border-box;
-margin: 0;
-padding: 0;
-font-family: 'Inter', sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', sans-serif;
 }
 
 body {
@@ -27,7 +23,7 @@ nav {
 }
 
 .links a {
-    color: var(--text-color);
+    color: #667085;
     text-decoration: none;
     margin-right: 2rem;
 }
@@ -39,7 +35,7 @@ button {
     height: 50px;
     top: 0px;
     border-radius: 0.5rem;
-    color: var(--text-color);
+    color: #667085;
     background: none;
     font-size: 0.9rem;
 }
@@ -51,108 +47,95 @@ button#signUp {
 
 /* text1 */
 
-header {
-    box-sizing: border-box;
-    width: 1440px;
-    height: 407px;
-    margin-bottom: 96px;
-    
-}
-
-.page {
-    color:#8E2424;
-    text-align: center;
-    margin-top: 96px;
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 600;
-    font-size: 16px;
-    line-height: 24px;
-}
-
-h1 {
-    color:#000000;
-    text-align: center;
-    margin-top: 24px;
-    font-family: 'Inter';
-    font-style: normal;
-    font-size: 48px;
-    line-height: 60px;
-    text-align: center;
-}
-
-.conteudo   {
-    font-family: 'Inter';
-    font-style: normal;
-    font-size: 20px;
-    line-height: 30px;
-    color: #667085;
-    text-align: center;
-    word-break: break-word;
-    margin-top: 36px;
-}
-
-/* metricas */
-
-.metricas-container {
-    height: 192px;
-    width: 1280px;
-    left: 80px;
-    top: 0px;
-    padding: 0px, 32px, 0px, 32px;
+.about-us {
+    padding: 6rem 1rem;
     display: flex;
-    justify-content: space-between;
-    margin-left: 90px;
-    margin-top: 96px;
-    display: flex;
-}
-
-.metricas-container h2 {
-    margin-top: 12px;
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 600;
-    font-size: 60px;
-    line-height: 72px;
-    color: #8E2424;
-}
-
-.metricas-container p {
-    height: 72px;
-    width: 280px;
-    left: 0px;
-    top: 36px;
-    border-radius: nullpx;
-
-}
-
-/* text 2 */
-
-.vagas {
-    text-align: center;
-    margin-top: 96px;
-}
-
-.vagas span {
-    display: flex;
+    flex-direction: column;
     align-items: center;
+    gap: 1rem; /* poderia ser margin-bottom pra cada elemento, gap dá um espaçamento entre todos
+    os filhos de uma div com display flex*/
+  }
+  
+  .about-us span {
+    color: #8E2424;
+    font-size: 16px;
+  }
+  
+  .about-us h1 {
+    font-size: 2rem;
+    color: var(--title-color);
+    text-align: center;
+    font-size: 48px;
+  }
+  
+  .about-us p {
+    color: #667085;
+    max-width: 50%;
+    text-align: center;
+    line-height: 1.5rem;
+  }
+  
+  /* Seção de métricas */
+  
+  .metrics {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 3rem;
+    padding: 0 8rem;
+  }
+  
+  .metric {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  
+  .metric h1 {
+    color: #8E2424;
+    font-size: 3rem;
+  }
+  
+  .metric span {
+    color: #667085;
+    line-height: 140%;
+    font-size: 90%;
+  }
+  
+  .metric .metric-title {
+    font-weight: 500;
+    color: #101828;
+  }
+  
+/* talentos */
+
+.talentos {
+    text-align: center;
+    margin-top: 96px;
+}
+
+.talentos span {
+    display: flex;
+    flex-direction: column;
+    padding-top: 1rem;
     color: #8E2424;
     background: rgba(142, 36, 36, 0.05);
-    padding: 0.3rem 0.5rem;
-    border-radius: 0.5rem;
-    width: 125px;
+    border-radius: 16px;
+    justify-content: center;
+    align-items: center;
+    padding: 0 12px;
+    width: 160px;
     height: 28px;
     margin-left: 650px;
-    font-family: 'Inter', sans-serif;
-    font-style: normal;
-    
+    mix-blend-mode: multiply;
+    font-size: 16px;
+    margin-bottom: 16px;
 }
 
-.vagas h2 {
+.talentos h2 {
     text-align: center;
     color: var(--title-color);
     margin-bottom: 20px;
-  font-family: Inter;
+    font-family: Inter;
     font-size: 36px;
     font-weight: 600;
     line-height: 44px;
@@ -161,21 +144,205 @@ h1 {
 
   }
   
-  .vagas p {
+  .talentos p {
     text-align: center;
     color: #667085;
     font-family: Inter;
     font-size: 20px;
     font-weight: 400;
     line-height: 30px;
-    letter-spacing: 0em;
-    text-align: center;
-
   }
 
   /* imagem principal */
   
-  .vagas img {
+  .talentos img {
     margin-top: 2rem;
     
   }
+
+  /* vagas */
+
+  .vagas-abertas {
+    padding-top: 4rem;
+  }
+
+  .vagas-abertas span.principal {
+    display: block;
+    max-width: 50%;
+    margin: 0 auto;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    font-weight: bold;
+    color: var(--title-color);
+  }
+
+  .vagas {
+    border: 1px solid #EAECF0;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    max-width: 50%;
+    margin: 0 auto;
+    margin-bottom: 1rem;
+    color: var(--title-color);
+    align-items: center;
+  }
+
+  .vaga span.titulo-vaga {
+    font-weight: 500;
+    margin-bottom: 16px;
+  }
+
+  .vagas .informacoes {
+    margin-top: 1rem;
+    font-size: 90%;
+    color: #667085;
+    display: flex;
+    gap: 2rem;
+  }
+
+  /* comentários */
+
+  .comentario {
+    display: flex;
+    flex-direction: column;
+    max-width: 80%;
+    margin: 8rem auto;
+    background-color: rgba(195, 25, 25, 0.05);
+    padding: 3rem 2rem;
+    align-items: center;
+  }
+
+  .comentario span {
+    color: #8E2424;
+    font-weight: 500;
+  }
+  .comentario h2 {
+    color: #101828;
+    font-weight: 500;
+    margin: 2rem 0;
+    text-align: center;
+  }
+  .comentario span.nome {
+    color: #101828;
+    margin: 0.5rem 0;
+    font-weight: 400;
+  }
+  
+  .comentario span.cargo {
+    color: #667085;
+    font-weight: 400;
+  }
+  /* formulario */
+  footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #F9FAFB;
+    padding: 6rem 1rem;
+    gap: 1.5rem;
+    text-align: center;
+  }
+
+footer h2 {
+    color: #101828;
+    font-size: 36px;
+}
+
+footer span {
+    color: #667085;
+}
+
+footer form {
+    display: flex;
+    justify-content: space-between;
+  }
+
+footer input {
+    outline: none;
+    border: 1px solid #D0D5DD;
+    border-radius: 0.5rem;
+    padding-left: 1rem;
+    width: 20rem;
+    margin-right: 1rem;
+  }
+  footer form .singUp {
+    background: #8E2424;
+    color: #FFFFFF;
+  }
+/* Responsividade */
+
+@media screen and (max-width: 920px) {
+    .metrics {
+      padding: 0 4rem;
+    }
+  }
+  
+  @media screen and (max-width: 850px) {
+    .metrics {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .metric {
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 2rem;
+    }
+  
+    .metric span {
+      max-width: 280px;
+      text-align: center;
+    }
+  
+    .about-us p {
+      max-width: 70%;
+    }
+  
+    .vaga {
+      max-width: 70%;
+    }
+    
+    .vagas-abertas span.principal {
+      max-width: 70%;
+    }
+  
+    .comentario h2 {
+      max-width: 100%;
+      font-size: 120%;
+    }
+  
+    /* Ajustes de menu aqui */
+  
+    .menu {
+      display: initial;
+      visibility: visible;
+    }
+  
+    .links {
+      margin: 2rem 0;
+    }
+  
+    .links a {
+      margin-right: 0;
+    }
+  
+    .menu {
+      flex-direction: column;
+      position: fixed;
+      top: 0;
+      right: -1000px;
+      height: 100vh;
+      background: #F9FAFB;
+      width: 15rem;
+      padding: 2rem;
+      transition: all 2s;
+    }
+  
+    .menu .links, .menu .button {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+    }
+  
