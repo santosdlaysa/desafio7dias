@@ -2,4 +2,4 @@
 
 Desafio de 7 dias de código da Giovanna Moeller em parceria com Alura.
 
-<img src="visual.png">
+<img src="./visual.png">
