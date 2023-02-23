@@ -301,6 +301,33 @@ footer form .singUp:hover {
 }
 
 /*responsivo */
+@media screen and (max-width: 1024px) {
+  .metrics {
+    grid-template-columns: repeat(3, 1fr);
+    padding: 0 1rem;
+  }
+  .talentos {
+    margin-top: 2rem;
+  }
+  .talentos span {
+    margin-left: 0;
+  }
+  .vagas-abertas span.principal {
+    max-width: 100%;
+  }
+  .vagas {
+    max-width: 100%;
+  }
+  .comentario {
+    max-width: 100%;
+  }
+  footer form {
+    flex-direction: column;
+  }
+  footer input {
+    margin-bottom: 1rem;
+  }
+}
 @media screen and (max-width: 768px) {
   .metrics {
     grid-template-columns: repeat(2, 1fr);
