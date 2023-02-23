@@ -34,11 +34,22 @@ button {
   color: #667085;
   background: none;
   font-size: 0.9rem;
+  border: solid 1px #EAECF0;
+  font-weight: 500;
+}
+
+button:hover{
+  background-color: #245e8e;
+  color: #fff;
 }
 
 button#signUp {
-  background-color: #8E2424;
-  color: #fff;
+  color: #667085;
+}
+
+button#signUp:hover{
+  background-color: #245e8e;
+  color: #ffffff;
 }
 
 /* text1 */
@@ -53,14 +64,14 @@ button#signUp {
     os filhos de uma div com display flex*/
 }
 
-.about-us span {
-  color: #8E2424;
-  font-size: 16px;
+.sobre-info{
+  color: #245e8e;
+  font-size: 18px;
 }
 
 .about-us h1 {
   font-size: 2rem;
-  color: var(--title-color);
+  color: #245e8e;
   text-align: center;
   font-size: 48px;
 }
@@ -78,7 +89,7 @@ button#signUp {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   column-gap: 3rem;
-  padding: 0 8rem;
+  padding: 0 9rem 0 13rem;
 }
 
 .metric {
@@ -88,7 +99,7 @@ button#signUp {
 }
 
 .metric h1 {
-  color: #8E2424;
+  color: #245e8e;
   font-size: 3rem;
 }
 
@@ -110,18 +121,25 @@ button#signUp {
   margin-top: 96px;
 }
 
-.talentos span {
+.talentos {
   display: block;
-  color: #8E2424;
-  background: rgba(142, 36, 36, 0.05);
-  border-radius: 16px;
   justify-content: center;
   align-items: center;
-  padding: 10px 12px;
-  font-size: 16px;
-  margin-bottom: 16px;
-  width: 25vh;
-  margin-left: 95vh;
+  font-size: 18px;
+
+}
+
+.info-vagas{
+  background: rgba(36, 70, 142, 0.05);
+  color: #245e8e;
+  padding: 0.5rem 1rem ;
+  border-radius: 12px;
+}
+
+.vaga-icon{
+  margin-right: 0.5rem;
+  width: 20px;
+  height:30px
 }
 
 .talentos h2 {
@@ -134,16 +152,17 @@ button#signUp {
   line-height: 44px;
   letter-spacing: -0.02em;
   text-align: center;
-
+  margin-top: 10px;
 }
 
 .talentos p {
   text-align: center;
-  color: #667085;
+  color: #245e8e;
   font-family: Inter;
   font-size: 20px;
   font-weight: 400;
   line-height: 30px;
+
 }
 
 /* imagem principal */
@@ -179,6 +198,7 @@ button#signUp {
   margin-bottom: 1rem;
   color: var(--title-color);
   align-items: center;
+  cursor: pointer;
 }
 
 .vaga span.titulo-vaga {
@@ -201,13 +221,13 @@ button#signUp {
   flex-direction: column;
   max-width: 80%;
   margin: 8rem auto;
-  background-color: rgba(195, 25, 25, 0.05);
+  background-color: rgba(25, 70, 195, 0.05);
   padding: 3rem 2rem;
   align-items: center;
 }
 
 .comentario span {
-  color: #8E2424;
+  color: #245e8e;
   font-weight: 500;
 }
 
@@ -265,7 +285,13 @@ footer input {
 }
 
 footer form .singUp {
-  background: #8E2424;
+  background: #fff;
+  border: solid 1px #EAECF0;
+  color: #667085;
+}
+
+footer form .singUp:hover {
+  background: #245e8e;
   color: #FFFFFF;
 }
 
